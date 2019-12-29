@@ -3,7 +3,6 @@ package com.example.rickandmortysoundboard;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +19,7 @@ import models.ButtonModel;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     private static MediaPlayer mp;
-    private ArrayList<ButtonModel> buttons = new ArrayList<>();
+    private ArrayList<ButtonModel> buttons;
     private Context context;
 
     public RecyclerViewAdapter(ArrayList<ButtonModel> buttons, Context context) {
@@ -77,7 +76,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
      * Stop the music
      * @param context Context of the media player
      */
-    public static void stop(Context context)
+    public void stop(Context context)
     {
         if (mp != null)
         {
