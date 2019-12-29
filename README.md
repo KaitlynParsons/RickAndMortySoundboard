@@ -2,5 +2,5 @@
 A basic soundboard for Android based around Rick and Morty.
 
 # Milestones
-- [ ] Add 8 sound buttons
+- [x] Add 8 sound buttons
 - [ ] Add theme

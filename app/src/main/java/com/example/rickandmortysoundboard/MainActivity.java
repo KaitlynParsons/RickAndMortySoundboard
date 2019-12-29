@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         buttons.add(new ButtonModel(getString(R.string.mr_poopybutthole), "mr_poopybutthole.mp3"));
         buttons.add(new ButtonModel(getString(R.string.riggity_wrecked), "riggity_wrecked.wav"));
         buttons.add(new ButtonModel(getString(R.string.tiny_rick), "tiny_rick.wav"));
+        buttons.add(new ButtonModel(getString(R.string.aw_jeez), "jeez.mp3"));
+        buttons.add(new ButtonModel(getString(R.string.mr_meeseeks), "mr_meeseeks.mp3"));
         initRecyclerView();
     }
 
